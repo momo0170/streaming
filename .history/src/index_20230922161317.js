@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './router/Home';
-import Track from './router/Track';
-import Artist from './router/Artist';
-import Genres from './router/Genres';
+import ChartTrack from './router/ChartTrack';
+import ChartArtist from './router/ChartArtist';
+import ChartGenres from './router/ChartGenres';
 
 const router = createBrowserRouter([
   {
@@ -18,16 +18,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'track',
-        element: <Track />,
+        path: 'chartTrack',
+        element: <ChartTrack />,
       },
       {
-        path: 'artist',
-        element: <Artist />,
+        path: 'chartArtist',
+        element: <ChartArtist />,
       },
       {
-        path: 'genres',
-        element: <Genres />,
+        path: 'chartGenres',
+        element: <ChartGenres />,
       },
     ],
   },
