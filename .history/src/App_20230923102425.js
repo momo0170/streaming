@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <Header />
-      <div className="flex">
+      <main>
         <MenuBar />
         <Outlet />
-      </div>
+      </main>
     </>
   );
 }

@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './router/Home';
-import Playlist from './router/Playlist';
+import Track from './router/Track';
+import Artist from './router/Artist';
+import Genres from './router/Genres';
 
 const router = createBrowserRouter([
   {
@@ -14,10 +16,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-      },
-      {
-        path: 'playlist',
-        element: <Playlist />,
       },
     ],
   },
