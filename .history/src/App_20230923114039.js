@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="flex m-3">
+      <div className="flex m-1">
         <MenuBar />
         <Outlet />
       </div>

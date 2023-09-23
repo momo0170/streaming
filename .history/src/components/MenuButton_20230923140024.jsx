@@ -13,7 +13,7 @@ export default function MenuButton({ text, path }) {
       ) : (
         <IoIosList size={SIZE} color={COLOR} />
       )}
-      <span className="text-base ml-4">{text}</span>
+      <span className="text-lg">{text}</span>
     </Link>
   );
 }

@@ -8,7 +8,7 @@ export default function MenuBar() {
   ];
 
   return (
-    <aside className="flex flex-col w-56">
+    <aside className="flex flex-col w-1/4">
       {list.map((item, idx) => (
         <MenuButton key={idx} text={item[1]} path={item[0]} />
       ))}

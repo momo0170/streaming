@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MenuButton from './MenuButton';
 
 export default function MenuBar() {
@@ -8,7 +9,7 @@ export default function MenuBar() {
   ];
 
   return (
-    <aside className="flex flex-col w-56">
+    <aside className="flex flex-col w-52">
       {list.map((item, idx) => (
         <MenuButton key={idx} text={item[1]} path={item[0]} />
       ))}
