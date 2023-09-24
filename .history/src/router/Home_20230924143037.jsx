@@ -21,18 +21,15 @@ export default function Home() {
 
   const token = window.localStorage.getItem('token');
   console.log(token);
-  token &&
-    axios({
-      method: 'get',
-      url: 'https://api.spotify.com/v1/artists/3qNVuliS40BLgXGxhdBdqu/top-tracks',
-      headers: {
-        Authorization: 'Bearer' + token,
-      },
-      params: {
-        market: 'KR',
-      },
-    }) //
-      .then((res) => console.log(res));
+  // token &&
+  //   axios({
+  //     method: 'get',
+  //     url: 'https://api.spotify.com/v1/artists/3qNVuliS40BLgXGxhdBdqu/top-tracks',
+  //     headers: {
+  //       Authorization: 'Bearer' + token,
+  //     },
+  //   }) //
+  //     .then((res) => console.log(res));
 
   return (
     <main className="m-2">

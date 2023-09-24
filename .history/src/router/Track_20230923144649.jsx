@@ -5,9 +5,7 @@ export default function Track(props) {
   const { artist, name, image } = props.item;
   return (
     <>
-      <img src={image[1]['#text']} alt="track" />
       <span>{artist.name}</span>
-      <span>{name}</span>
     </>
   );
 }

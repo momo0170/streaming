@@ -28,9 +28,6 @@ export default function Home() {
       headers: {
         Authorization: 'Bearer' + token,
       },
-      params: {
-        market: 'KR',
-      },
     }) //
       .then((res) => console.log(res));
 
